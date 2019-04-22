@@ -47,7 +47,7 @@
             "metadata": []
         }, 
         {
-            "comment": "port-scanning", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1046", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -71,7 +71,7 @@
             "metadata": []
         }, 
         {
-            "comment": "git-fup-pivot, theory-defense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1078", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -79,7 +79,7 @@
             "metadata": []
         }, 
         {
-            "comment": "git-fup-pivot, theory-defense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1078", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -87,7 +87,7 @@
             "metadata": []
         }, 
         {
-            "comment": "git-fup-pivot, theory-defense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1078", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -95,7 +95,7 @@
             "metadata": []
         }, 
         {
-            "comment": "git-fup-pivot, theory-defense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1078", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -143,7 +143,7 @@
             "metadata": []
         }, 
         {
-            "comment": "git-fup-pivot", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1003", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -183,7 +183,7 @@
             "metadata": []
         }, 
         {
-            "comment": "git-fup-pivot, theory-defense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1105", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -191,7 +191,7 @@
             "metadata": []
         }, 
         {
-            "comment": "git-fup-pivot, theory-defense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1105", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -271,7 +271,7 @@
             "metadata": []
         }, 
         {
-            "comment": "exploiting-a-linux-server", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1007", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -327,7 +327,7 @@
             "metadata": []
         }, 
         {
-            "comment": "git-fup-pivot, theory-defense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1145", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -335,7 +335,7 @@
             "metadata": []
         }, 
         {
-            "comment": "pivot-to-windows", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1059", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -351,7 +351,7 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory, theory-offense, theory-defense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1075", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -463,7 +463,7 @@
             "metadata": []
         }, 
         {
-            "comment": "git-fup-pivot, theory-defense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1199", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -527,17 +527,17 @@
             "metadata": []
         }, 
         {
-            "comment": "theory-offense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1134", 
-            "color": "#8bc343", 
+            "color": "#ff6666", 
             "enabled": true, 
             "tactic": "defense-evasion", 
             "metadata": []
         }, 
         {
-            "comment": "theory-offense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1134", 
-            "color": "#8bc343", 
+            "color": "#ff6666", 
             "enabled": true, 
             "tactic": "privilege-escalation", 
             "metadata": []
@@ -839,9 +839,9 @@
             "metadata": []
         }, 
         {
-            "comment": "theory-offense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1210", 
-            "color": "#8bc343", 
+            "color": "#ff6666", 
             "enabled": true, 
             "tactic": "lateral-movement", 
             "metadata": []
@@ -919,7 +919,7 @@
             "metadata": []
         }, 
         {
-            "comment": "demo-keepass", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1179", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -927,7 +927,7 @@
             "metadata": []
         }, 
         {
-            "comment": "demo-keepass", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1179", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -935,7 +935,7 @@
             "metadata": []
         }, 
         {
-            "comment": "demo-keepass", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1179", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -1079,9 +1079,9 @@
             "metadata": []
         }, 
         {
-            "comment": "theory-offense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1135", 
-            "color": "#8bc343", 
+            "color": "#ff6666", 
             "enabled": true, 
             "tactic": "discovery", 
             "metadata": []
@@ -1207,9 +1207,9 @@
             "metadata": []
         }, 
         {
-            "comment": "theory-offense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1018", 
-            "color": "#8bc343", 
+            "color": "#ff6666", 
             "enabled": true, 
             "tactic": "discovery", 
             "metadata": []
@@ -1287,17 +1287,17 @@
             "metadata": []
         }, 
         {
-            "comment": "theory-offense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1064", 
-            "color": "#8bc343", 
+            "color": "#ff6666", 
             "enabled": true, 
             "tactic": "defense-evasion", 
             "metadata": []
         }, 
         {
-            "comment": "theory-offense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1064", 
-            "color": "#8bc343", 
+            "color": "#ff6666", 
             "enabled": true, 
             "tactic": "execution", 
             "metadata": []
@@ -1487,9 +1487,9 @@
             "metadata": []
         }, 
         {
-            "comment": "theory-defense", 
+            "comment": "windows-post-exploitation", 
             "techniqueID": "T1097", 
-            "color": "#8bc343", 
+            "color": "#ff6666", 
             "enabled": true, 
             "tactic": "lateral-movement", 
             "metadata": []
@@ -1498,6 +1498,30 @@
             "comment": "theory-defense", 
             "techniqueID": "T1184", 
             "color": "#8bc343", 
+            "enabled": true, 
+            "tactic": "lateral-movement", 
+            "metadata": []
+        }, 
+        {
+            "comment": "windows-post-exploitation", 
+            "techniqueID": "T1214", 
+            "color": "#ff6666", 
+            "enabled": true, 
+            "tactic": "credential-access", 
+            "metadata": []
+        }, 
+        {
+            "comment": "windows-post-exploitation", 
+            "techniqueID": "T1028", 
+            "color": "#ff6666", 
+            "enabled": true, 
+            "tactic": "execution", 
+            "metadata": []
+        }, 
+        {
+            "comment": "windows-post-exploitation", 
+            "techniqueID": "T1028", 
+            "color": "#ff6666", 
             "enabled": true, 
             "tactic": "lateral-movement", 
             "metadata": []
