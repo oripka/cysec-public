@@ -39,7 +39,7 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "exploiting-a-linux-server, theory-offense", 
             "techniqueID": "T1090", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -55,7 +55,7 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "pivot-to-windows, theory-offense", 
             "techniqueID": "T1132", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -63,7 +63,7 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "pivot-to-windows, theory-offense", 
             "techniqueID": "T1001", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -127,7 +127,7 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "debian4-ssh", 
             "techniqueID": "T1032", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -263,7 +263,7 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "xss, theory-offense, theory-defense", 
             "techniqueID": "T1192", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -279,7 +279,7 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "demo-keepass", 
             "techniqueID": "T1204", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -487,7 +487,7 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "exploiting-a-linux-server", 
             "techniqueID": "T1480", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -711,9 +711,9 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "theory-offense", 
             "techniqueID": "T1172", 
-            "color": "#ff6666", 
+            "color": "#8bc343", 
             "enabled": true, 
             "tactic": "command-and-control", 
             "metadata": []
@@ -983,23 +983,23 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "theory-offense, theory-defense", 
             "techniqueID": "T1170", 
-            "color": "#ff6666", 
+            "color": "#8bc343", 
             "enabled": true, 
             "tactic": "defense-evasion", 
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "theory-offense, theory-defense", 
             "techniqueID": "T1170", 
-            "color": "#ff6666", 
+            "color": "#8bc343", 
             "enabled": true, 
             "tactic": "execution", 
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "git-fup-pivot", 
             "techniqueID": "T1188", 
             "color": "#ff6666", 
             "enabled": true, 
@@ -1007,9 +1007,9 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "theory-offense", 
             "techniqueID": "T1026", 
-            "color": "#ff6666", 
+            "color": "#8bc343", 
             "enabled": true, 
             "tactic": "command-and-control", 
             "metadata": []
@@ -1311,9 +1311,9 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "theory-offense, theory-defense", 
             "techniqueID": "T1193", 
-            "color": "#ff6666", 
+            "color": "#8bc343", 
             "enabled": true, 
             "tactic": "initial-access", 
             "metadata": []
@@ -1423,9 +1423,9 @@
             "metadata": []
         }, 
         {
-            "comment": "lateral-movemement-active-directory", 
+            "comment": "theory-defense", 
             "techniqueID": "T1080", 
-            "color": "#ff6666", 
+            "color": "#8bc343", 
             "enabled": true, 
             "tactic": "lateral-movement", 
             "metadata": []
@@ -1444,70 +1444,6 @@
             "color": "#ff6666", 
             "enabled": true, 
             "tactic": "defense-evasion", 
-            "metadata": []
-        }, 
-        {
-            "comment": "lateral-movemement-active-directory", 
-            "techniqueID": "T1223", 
-            "color": "#ff6666", 
-            "enabled": true, 
-            "tactic": "defense-evasion", 
-            "metadata": []
-        }, 
-        {
-            "comment": "lateral-movemement-active-directory", 
-            "techniqueID": "T1223", 
-            "color": "#ff6666", 
-            "enabled": true, 
-            "tactic": "execution", 
-            "metadata": []
-        }, 
-        {
-            "comment": "lateral-movemement-active-directory", 
-            "techniqueID": "T1122", 
-            "color": "#ff6666", 
-            "enabled": true, 
-            "tactic": "defense-evasion", 
-            "metadata": []
-        }, 
-        {
-            "comment": "lateral-movemement-active-directory", 
-            "techniqueID": "T1122", 
-            "color": "#ff6666", 
-            "enabled": true, 
-            "tactic": "persistence", 
-            "metadata": []
-        }, 
-        {
-            "comment": "lateral-movemement-active-directory", 
-            "techniqueID": "T1220", 
-            "color": "#ff6666", 
-            "enabled": true, 
-            "tactic": "defense-evasion", 
-            "metadata": []
-        }, 
-        {
-            "comment": "lateral-movemement-active-directory", 
-            "techniqueID": "T1220", 
-            "color": "#ff6666", 
-            "enabled": true, 
-            "tactic": "execution", 
-            "metadata": []
-        }, 
-        {
-            "comment": "lateral-movemement-active-directory", 
-            "techniqueID": "T1497", 
-            "color": "#ff6666", 
-            "enabled": true, 
-            "tactic": "defense-evasion", 
-            "metadata": []
-        }, 
-        {
-            "comment": "lateral-movemement-active-directory", 
-            "techniqueID": "T1497", 
-            "color": "#ff6666", 
-            "enabled": true, 
-            "tactic": "discovery", 
             "metadata": []
         }, 
         {
