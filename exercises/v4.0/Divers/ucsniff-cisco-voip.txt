@@ -1,0 +1,17 @@
+UCSniff GARP Disablement
+ucsniff -i eth0 --garpdb // //
+
+Ein weiteres Problem ist, welches nicht auf der Folie beschrieben ist, dass Skinny Nachrichten nur vom Netzwerk zum Telefon gesnifft werden können. Dies passiert, da das IP Telefon nach dem Default Gateway ARPt sobald es booted und sich das erste Mal registriert. Alle darauffolgenden ARP Spoofings sind ineffektiv.
+
+TFPT Datei Manipulation
+
+ucsniff -i eth0 --tftpm -T -D
+
+Targets.txt
+172.16.87.6,1004,John,sccp
+
+UCSniff blockiert bei diesem Angriff Skinny KeepAliveAck Nachrichten vom Call Manager. Dadurch denkt das Telefon, es hätte seine Verbindung zum Call Manager verloren und versucht sich neu bei Call Manager zu registrieren. Während der Registrierung lädt das Telefeon de SEP CND XML Konfigurationsdatei via TFTP herunter, in welcher die gesamte Konfiguration des Telefons festgelegt wird.
+UCSniff analysiert daraufhin den UDP Verkehr vom Call Manager und manipuliert den Wert GARP Disabled auf Enabled.
+
+In this process, it will attempt to download its SEP CNF XML configuration file, which includes the full configuration that the phone needs to parse. This file is used by the Administrator to configure the phone server-side, and the phone firmware parses the file to tell itself how it needs to be configured. UCSniff sets up a UDP stream dissector which intercepts and analyzes the return traffic, looking for signs that the server is sending this SEP CNF XML configuration file over TFTP to the IP Phone. UCSniff simply looks for the GARP Disabled configuration file in the TFTP UDP streamand sets it to Enabled. When the phone finishes parsing the configuration, it now re-registers and has GARP Enabled. The only way to restore this configuration setting back is to reboot the IP Phone.
+

