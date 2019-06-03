@@ -265,6 +265,22 @@
             "metadata": []
         },
         {
+            "techniqueID": "T1171",
+            "tactic": "credential-access",
+            "color": "#ff6666",
+            "comment": "empire-inveigh, theory-defense, theory-offense",
+            "enabled": true,
+            "metadata": []
+        },
+        {
+            "techniqueID": "T1199",
+            "tactic": "initial-access",
+            "color": "#ff6666",
+            "comment": "windows-post-exploitation",
+            "enabled": true,
+            "metadata": []
+        },
+        {
             "techniqueID": "T1087",
             "tactic": "discovery",
             "color": "#ff6666",
@@ -449,14 +465,6 @@
             "metadata": []
         },
         {
-            "techniqueID": "T1199",
-            "tactic": "initial-access",
-            "color": "#ff6666",
-            "comment": "windows-post-exploitation",
-            "enabled": true,
-            "metadata": []
-        },
-        {
             "techniqueID": "T1040",
             "tactic": "credential-access",
             "color": "#ff6666",
@@ -501,6 +509,14 @@
             "tactic": "privilege-escalation",
             "color": "#ff6666",
             "comment": "iis-double-decode",
+            "enabled": true,
+            "metadata": []
+        },
+        {
+            "techniqueID": "T1208",
+            "tactic": "credential-access",
+            "color": "#ff6666",
+            "comment": "kerberoast",
             "enabled": true,
             "metadata": []
         },
@@ -715,14 +731,6 @@
         {
             "techniqueID": "T1200",
             "tactic": "initial-access",
-            "color": "#8bc343",
-            "comment": "theory-defense, theory-offense",
-            "enabled": true,
-            "metadata": []
-        },
-        {
-            "techniqueID": "T1171",
-            "tactic": "credential-access",
             "color": "#8bc343",
             "comment": "theory-defense, theory-offense",
             "enabled": true,
