@@ -1384,6 +1384,142 @@
 			"comment": "",
 			"enabled": true,
 			"metadata": []
+		},
+		{
+			"techniqueID": "T1485",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1486",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1491",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1488",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1487",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1483",
+			"tactic": "command-and-control",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1499",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1495",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1490",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1498",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1496",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1494",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1489",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1492",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1493",
+			"tactic": "impact",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "defense-evasion",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
+		},
+		{
+			"techniqueID": "T1497",
+			"tactic": "discovery",
+			"color": "#31a354",
+			"comment": "",
+			"enabled": true,
+			"metadata": []
 		}
 	],
 	"gradient": {
