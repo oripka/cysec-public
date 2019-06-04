@@ -521,6 +521,22 @@
             "metadata": []
         },
         {
+            "techniqueID": "T1175",
+            "tactic": "lateral-movement",
+            "color": "#ff6666",
+            "comment": "lateral-movement-active-directory",
+            "enabled": true,
+            "metadata": []
+        },
+        {
+            "techniqueID": "T1075",
+            "tactic": "lateral-movement",
+            "color": "#ff6666",
+            "comment": "windows-post-exploitation",
+            "enabled": true,
+            "metadata": []
+        },
+        {
             "techniqueID": "T1169",
             "tactic": "privilege-escalation",
             "color": "#ff6666",
@@ -749,14 +765,6 @@
             "tactic": "execution",
             "color": "#8bc343",
             "comment": "theory-defense, theory-offense",
-            "enabled": true,
-            "metadata": []
-        },
-        {
-            "techniqueID": "T1075",
-            "tactic": "lateral-movement",
-            "color": "#ff6666",
-            "comment": "windows-post-exploitation",
             "enabled": true,
             "metadata": []
         },
