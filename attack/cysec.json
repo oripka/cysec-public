@@ -1,6 +1,6 @@
 {
     "name": "CYSEC Course Att&ck Mapping",
-    "version": "2.1",
+    "version": "2.2",
     "domain": "mitre-enterprise",
     "description": "Mapping of CYSEC Training Course to Mitre Att&ck",
     "filters": {
